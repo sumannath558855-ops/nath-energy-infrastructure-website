@@ -196,7 +196,7 @@ export function LandingPage() {
             <div className="text-left">
               <p className="font-heading text-lg leading-none">Nath Energy & Infrastructure</p>
               <p className="mt-1 text-xs tracking-[0.2em] text-muted-foreground uppercase">
-                EPC for infrastructure & solar
+                Excellence in every work, safety in every step.
               </p>
             </div>
           </button>
@@ -231,7 +231,7 @@ export function LandingPage() {
             className="max-w-3xl"
           >
             <span className="inline-flex rounded-full border border-white/12 bg-white/8 px-4 py-2 text-[0.72rem] font-semibold tracking-[0.24em] text-[#93ffcf] uppercase">
-              Trusted EPC Support For Roads, Civil Works, Solar, And Project Delivery.
+              Trusted EPC Support For Roads, Civil Works, Solar, And Transmission Project (Committed To Time)
             </span>
             <h1 className="mt-6 font-heading text-5xl leading-[0.95] tracking-[-0.05em] sm:text-6xl">
               A EPC solution provider for government, industrial, and commercial projects.
