@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef, useState, useSyncExternalStore } from "react";
 import type { ChangeEvent } from "react";
 
@@ -181,11 +182,14 @@ export function LandingPage() {
       <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 supports-backdrop-filter:backdrop-blur-xl">
         <div className="section-shell flex h-18 items-center justify-between gap-4">
           <button type="button" onClick={() => scrollToSection("#top")} className="flex items-center gap-3">
-            <div className="relative flex size-12 items-center justify-center overflow-hidden rounded-[1.4rem] border border-white/20 bg-[linear-gradient(150deg,#071521,#0b2940_48%,#0e8f67_88%)] text-white shadow-[0_18px_50px_rgba(8,26,41,0.28)]">
-              <span className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.34),_transparent_34%)]" />
-              <span className="absolute inset-[3px] rounded-[1.1rem] border border-white/10" />
-              <span className="absolute -right-2 -bottom-2 size-6 rounded-full bg-[#8fffd1]/20 blur-lg" />
-              <LogoMark compact />
+            <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-[1.1rem] border border-border bg-white p-1.5 shadow-[0_18px_50px_rgba(8,26,41,0.14)] dark:border-white/10 dark:bg-white">
+              <Image
+                src="/nath-logo.jpeg"
+                alt="Nath Energy & Infrastructure logo"
+                width={56}
+                height={56}
+                className="h-full w-full object-contain"
+              />
             </div>
             <div className="text-left">
               <p className="font-heading text-lg leading-none">Nath Energy & Infrastructure</p>
@@ -600,35 +604,5 @@ function Field({
       <span className="text-sm font-medium text-foreground">{label}</span>
       {children}
     </label>
-  );
-}
-
-function LogoMark({ compact = false }: { compact?: boolean }) {
-  return (
-    <div
-      className={
-        compact
-          ? "relative flex h-6 w-7 items-center justify-center"
-          : "relative flex h-8 w-10 items-center justify-center"
-      }
-      aria-hidden="true"
-    >
-      <div className="relative h-full w-full">
-        <span className="absolute left-[4%] top-[10%] h-[82%] w-[14%] rounded-full bg-white" />
-        <span className="absolute left-[24%] top-[10%] h-[82%] w-[14%] rounded-full bg-white" />
-        <span className="absolute left-[12%] top-[18%] h-[14%] w-[20%] origin-left rotate-[56deg] rounded-full bg-white" />
-
-        <span className="absolute left-[46%] top-[10%] h-[82%] w-[12%] rounded-full bg-[#8fffd1]" />
-        <span className="absolute left-[46%] top-[10%] h-[12%] w-[28%] rounded-full bg-[#8fffd1]" />
-        <span className="absolute left-[46%] top-[44%] h-[12%] w-[24%] rounded-full bg-[#8fffd1]" />
-        <span className="absolute left-[46%] bottom-[8%] h-[12%] w-[28%] rounded-full bg-[#8fffd1]" />
-
-        <span className="absolute right-[8%] top-[10%] h-[82%] w-[12%] rounded-full bg-[#8fc7ff]" />
-        <span className="absolute right-[2%] top-[10%] h-[12%] w-[24%] rounded-full bg-[#8fc7ff]" />
-        <span className="absolute right-[2%] bottom-[8%] h-[12%] w-[24%] rounded-full bg-[#8fc7ff]" />
-
-        <span className="absolute inset-[6%] rounded-full border border-white/8" />
-      </div>
-    </div>
   );
 }
