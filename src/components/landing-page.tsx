@@ -182,7 +182,7 @@ export function LandingPage() {
       <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 supports-backdrop-filter:backdrop-blur-xl">
         <div className="section-shell flex h-18 items-center justify-between gap-4">
           <button type="button" onClick={() => scrollToSection("#top")} className="flex items-center gap-3">
-            <div className="flex h-16 w-24 items-center justify-center overflow-hidden rounded-[1.15rem] border border-border bg-white p-1 shadow-[0_18px_50px_rgba(8,26,41,0.14)] dark:border-white/10 dark:bg-white">
+            <div className="flex h-16 w-24 items-center justify-center overflow-hidden rounded-[1.15rem] border border-border bg-white px-0.5 py-0.5 shadow-[0_18px_50px_rgba(8,26,41,0.14)] dark:border-white/10 dark:bg-white">
               <Image
                 src="/nath-logo.jpeg"
                 alt="Nath Energy & Infrastructure logo"
@@ -190,7 +190,7 @@ export function LandingPage() {
                 height={64}
                 quality={100}
                 priority
-                className="h-full w-full object-contain"
+                className="h-full w-full scale-[1.08] object-contain"
               />
             </div>
             <div className="text-left">
