@@ -5,15 +5,15 @@ export default function Loading() {
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#07131e] text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(73,211,160,0.28),_transparent_34%),radial-gradient(circle_at_bottom_right,_rgba(96,167,255,0.22),_transparent_26%)]" />
       <div className="relative flex flex-col items-center gap-5">
-        <div className="relative flex size-28 items-center justify-center overflow-hidden rounded-[2rem] border border-white/20 bg-white p-2 text-lg font-semibold text-primary-foreground shadow-[0_24px_70px_rgba(0,0,0,0.28)] supports-backdrop-filter:backdrop-blur-xl">
+        <div className="relative flex size-32 items-center justify-center overflow-hidden rounded-[2rem] border border-white/20 bg-white p-1.5 text-lg font-semibold text-primary-foreground shadow-[0_24px_70px_rgba(0,0,0,0.28)] supports-backdrop-filter:backdrop-blur-xl">
           <span className="absolute inset-0 animate-ping rounded-[2rem] border border-primary/40" />
           <span className="absolute inset-[6px] rounded-[1.6rem] border border-slate-200/80" />
           <Image
             src="/nath-logo.jpeg"
             alt="Nath Energy & Infrastructure logo"
-            width={112}
-            height={112}
-            className="relative z-10 h-full w-full object-contain"
+            width={128}
+            height={128}
+            className="relative z-10 h-full w-full scale-110 object-contain"
           />
         </div>
         <div className="text-center">
