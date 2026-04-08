@@ -231,7 +231,7 @@ export function LandingPage() {
             className="max-w-3xl"
           >
             <span className="inline-flex rounded-full border border-white/12 bg-white/8 px-4 py-2 text-[0.72rem] font-semibold tracking-[0.24em] text-[#93ffcf] uppercase">
-              Trusted EPC Support For Roads, Civil Works, Solar, And Transmission Project (Committed To Time)
+              Trusted EPC Support For Roads, Civil Works, Solar, And Transmission Project
             </span>
             <h1 className="mt-6 font-heading text-5xl leading-[0.95] tracking-[-0.05em] sm:text-6xl">
               A EPC solution provider for government, industrial, and commercial projects.
